@@ -12,7 +12,7 @@ function barMenu(){
                         <a class="nav-link" href="index.html"><i class="fa-solid fa-house-chimney-window"></i> Home </a>\
                     </li>\
                     <li class="nav-item">\
-                        <a class="nav-link" href="#"><i class="fa-regular fa-envelope"></i> Contact</a>\
+                        <a class="nav-link" href="aboutme.html"><i class="fa-regular fa-envelope"></i> Contact</a>\
                     </li>\
                 </ul>\
             </div>\

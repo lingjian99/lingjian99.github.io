@@ -33,29 +33,6 @@ p.big {
   text-indent: 150px;
 }
 
-h1 {
-  font-size: xx-large;
-  text-shadow: 3px 3px 3px #000000;
-}
-h2 {
-  font-size: x-large;
-  text-shadow: 3px 2px 2px #000000;
-  margin-top: 20px;
-  /*color:chocolate*/
-  line-height: 40px;
-}
-h4 {
-  color: #f0f0f0;
-  line-height: 35px;
-}
-
-
-.title2 {
-  font-size: 16px;
-  color: #f0f0f0;
-  line-height: 32px;
-}
-
 .topnav a:hover {
   border-bottom: 3px solid red;
 }
@@ -66,4 +43,126 @@ h4 {
 }
 .navbar.bg-light.form-control {
   border-radius: 4.25rem;
+}
+
+
+.fa-brands {
+  padding: 4px;
+  font-size: 16px;
+  width: 24px;
+  text-align: center;
+  text-decoration: none;
+  margin: 1px 1px;
+  border-radius: 3px;
+}
+
+.fa:hover {
+    opacity: 0.8;
+    border-bottom: 3px solid red;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-pinterest {
+  background: #cb2027;
+  color: white;
+}
+
+.fa-snapchat-ghost {
+  background: #fffc00;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.fa-skype {
+  background: #00aff0;
+  color: white;
+}
+
+.fa-android {
+  background: #a4c639;
+  color: white;
+}
+
+.fa-dribbble {
+  background: #ea4c89;
+  color: white;
+}
+
+.fa-vimeo {
+  background: #45bbff;
+  color: white;
+}
+
+.fa-tumblr {
+  background: #2c4762;
+  color: white;
+}
+
+.fa-vine {
+  background: #00b489;
+  color: white;
+}
+
+.fa-foursquare {
+  background: #45bbff;
+  color: white;
+}
+
+.fa-stumbleupon {
+  background: #eb4924;
+  color: white;
+}
+
+.fa-flickr {
+  background: #f40083;
+  color: white;
+}
+
+.fa-yahoo {
+  background: #430297;
+  color: white;
+}
+
+.fa-soundcloud {
+  background: #ff5500;
+  color: white;
+}
+
+.fa-reddit {
+  background: #ff5700;
+  color: white;
+}
+
+.fa-rss {
+  background: #ff6600;
+  color: white;
 }

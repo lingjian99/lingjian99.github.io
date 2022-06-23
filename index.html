@@ -6,28 +6,26 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="./CSS/main.css">
   <link rel="stylesheet" href="fontawesome-free-6.1.1-web/css/all.css">
   <title>Ling's - Main Page</title>
 
 </head>
 
-<body>
+<body style="display: flex">
+  <hr><hr><hr><hr><hr><hr><hr><hr><hr><hr>
   <script src="./JS/bar_menu.js"></script>
   <script>
     barMenu();
   </script>
 
-        <div class="upload">
-        <br>
-                 
-        <button class="btn btn-warning btn-block" id="myBlog" onclick="window.location.href='blog.html'">My Blog</button>
-        <button class="btn btn-warning btn-block" id="codingExercise" onclick="window.location.href='http://34.94.134.31:8080/dosaic'">Coding Exercise</button>
-        <button class="btn btn-warning btn-block" id="pictur" onclick="comingSoon()">Selected Photo</button>     
-        <button class="btn btn-warning btn-block" id="other" onclick="javascript:alert('coming soon...')">Other</button>          
-        <button class="btn btn-warning btn-block" id="aboutMe" onclick="comingSoon()">About Me</button>
+  <div class="main-menu">               
+    <button class="btn btn-block" id="myBlog" style="background-color: #eea000;" onclick="window.location.href='blog.html'">My Blog</button>
+    <button class="btn btn-block" id="codingExercise" style="background-color: #eea000;" onclick="window.location.href='http://34.94.134.31:8080/dosaic'">Coding Exercise</button>
+    <button class="btn btn-block" id="pictur"  style="background-color: #eea000;" onclick="comingSoon()">Selected Photo</button>     
+    <button class="btn btn-block" id="other"  style="background-color: #eea000;" onclick="javascript:alert('coming soon...')">Other</button>          
+    <button class="btn btn-block" id="aboutMe"  style="background-color: #eea000;" onclick="comingSoon()">About Me</button>
   </div>
 
   <nav class="navbar bg-dark fixed-bottom">

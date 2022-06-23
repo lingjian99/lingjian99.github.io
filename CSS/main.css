@@ -1,9 +1,11 @@
 body {
-  background-color: #303030;
-  text-align: justify;
+  background-color: white;/* #303030; */
+  color:lightgray;
+}
+p {
+  margin: 0px 0px 0px 0px;  
+  text-indent: 2em;
   font-size: 14px;
-
-  color: #f0f0f0;
 }
 
 .navbar.bg-light {
@@ -16,15 +18,16 @@ li a:hover {
 }
 
 
-div.upload {
-  width: 364px;
+div.main-menu {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 50%;
+  width: 365px;
+  margin: auto;
 
-  height: 300px;
-  margin: 0px auto;
-  margin-top: 80px;
-  text-align: center;
-  /*border-style: solid;
-    border-width: 1px;*/
 }
 
 
@@ -34,7 +37,7 @@ p.big {
 }
 
 .topnav a:hover {
-  border-bottom: 3px solid red;
+  border-bottom: 3px solid #303030;
 }
 
 /*  */

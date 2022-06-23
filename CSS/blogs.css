@@ -1,8 +1,13 @@
+
+:root {
+    --main-color: #eea000;
+}
+
 .figure{
     font-size:small;
-    margin-left: 40px;
-    margin-right: 40px;
-    margin-bottom: 20px;
+    margin-left: 6em;
+    margin-right: 6em;
+
     line-height: 22px;
     text-indent: 0px;
 
@@ -10,7 +15,8 @@
 .picture{
    width:100%;
    text-align:center;
-   text-indent: 0%; 
+   margin-top: 20px;
+
    
 }
 .row div {
@@ -21,15 +27,27 @@
     }
 
 img{
-
-    border-radius: 8px;
     max-width: 100%;
-    z-index: 1;
+    box-shadow: 1px 1px 5px black;
+
   }
 
   .blogCategory{
-      font-size: x-large;
-      color:#ff9000;
-      text-shadow: 3px 3px 3px #000000;
-      
+    text-indent: 0%;
+    font-size: x-large;
+    color:var(--main-color);
+    text-shadow: 1px 1px 1px var(--main-color);
+
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .blogNormal{
+    font-size:16px; 
+    line-height: 24px; 
+    color: #101010;
+  }
+  .hor_line{
+        align-self: center;
+        width: 80%;
+        height: 2px;
+        border-top: solid var(--main-color);
   }

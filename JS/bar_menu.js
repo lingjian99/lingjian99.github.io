@@ -24,7 +24,7 @@ function footMenu(){
         '<br>    <br>    <br>    <br>    <br>\
         <div class="navbar bg-dark fixed-bottom">\
           <div style="width: 100%; margin:auto; word-wrap: break-word; max-width: 720px;">\
-            <p class="blogNormal">这是一个练习，涉及技术包括HTML，CSS，JavaScript，Ajax，Java，c/c++，opencv等，时间有限，只能浅尝辄止。代码均在github上面。版权莫有，盗版不究！NonCopyRight© 2020.9\
+            <p class="blogNormal" style="text-indent:0px;">这是一个老程序员的心血来潮，也算是一个编程练习, 代码均在github上面。版权莫有，盗版不究！NonCopyRight© 2020.9\
             <span><a href="https://www.facebook.com/profile.php?id=100073787142000" class="fa-brands fa-facebook"></a>\
             <a href="#" class="fa-brands fa-twitter"></a>\
             <a href="#" class="fa-brands fa-linkedin"></a>\

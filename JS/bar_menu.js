@@ -1,6 +1,6 @@
 function barMenu(){
     document.write(
-        '<div class="navbar fixed-top navbar-expand-lg navbar-light" style="background-color: #eea000;">\
+        '<div class="navbar fixed-top navbar-expand-lg navbar-light" style="background-color: var(--main-color);">\
         <a><i class="fa-solid fa-burger" style="font-size: 24px; color: rgb(200, 100, 20); text-align: left;"></i> &nbsp;<i class="fa-solid fa-mug-hot" style="font-size: 20px; color: rgb(34, 104, 110); align-self: left;"></i></a>\
             <a class="navbar-brand" href="#">&nbsp &nbsp无处安放的猪</a>\
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">\

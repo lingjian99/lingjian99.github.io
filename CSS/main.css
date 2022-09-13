@@ -1,5 +1,10 @@
+
+:root {
+  --main-color: #f08000;
+}
+
 body {
-  background-color: white;/* #303030; */
+  background-color: #303030; 
   color:lightgray;
 }
 p {

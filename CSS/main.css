@@ -1,6 +1,7 @@
+@import url(animate.css);
 
 :root {
-  --main-color: #f08000;
+  --main-color: #d07000;
 }
 
 body {
@@ -174,3 +175,51 @@ p.big {
   background: #ff6600;
   color: white;
 }
+#container {
+    position: fixed;
+    width: 400px;
+    height: 300px;
+    top: 50%;
+    left: 50%;
+    margin-top: -150px;
+    margin-left: -200px;
+    text-align: center;
+    -webkit-animation-name: bounceInDown;
+    -webkit-animation-fill-mode: both;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: bounceInDown;
+    -moz-animation-fill-mode: both;
+    -moz-animation-duration: 1s;
+    -moz-animation-iteration-count: 1;
+    -moz-animation-timing-function: linear;
+    animation-name: bounceIn;
+    animation-fill-mode: both;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+   }
+
+   
+.btn {
+  text-decoration: none;
+  border: 2px solid var(--main-color);
+  position: relative;
+  color:white;
+  overflow: hidden;
+  border-radius: 20px;
+  width:300px;
+  
+}
+
+.btn:hover {
+  color:var(--main-color);
+  box-shadow: 1px 1px 25px 10px rgba(346, 148, 0, 0.4);
+}
+
+.btn:hover:before {
+  left: 100%;
+  border: 4px solid var(--main-color);
+}
+

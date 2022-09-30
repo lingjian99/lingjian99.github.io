@@ -1,10 +1,11 @@
 
-function blog_chief_large(title)
+function blog_chief_large(title,summary)
 {
-    let str = '<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12"> <a href="blogs/'
+    let str = '<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" > <a href="blogs/'
         +title
         +'/main.html"><img class="dash" src="blogs/'
         +title
-        +'/images/cover.jpg" class="img-responsive" alt="No image"></a></div>';
+        +'/images/cover.jpg" class="img-responsive" alt="No image"></a>'
+        +'<div style="margin-top:6px;margin-bottom:10px;font-size:14px;">'+summary+'</div></div>';
     document.write(str);
 }

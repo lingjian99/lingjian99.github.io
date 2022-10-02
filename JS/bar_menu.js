@@ -1,24 +1,21 @@
 function barMenu(){
     document.write(
-        '<div class="navbar fixed-top navbar-expand-lg navbar-light" style="background-color: var(--main-color);">\
-        <a><i class="fa-solid fa-burger" style="font-size: 24px; color: rgb(200, 100, 20); text-align: left;"></i> &nbsp;<i class="fa-solid fa-mug-hot" style="font-size: 20px; color: rgb(34, 104, 110); align-self: left;"></i></a>\
-            <span class="navbar-brand" style="color:white">&nbsp &nbsp无处安放的猪</span>\
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">\
-                <span class="navbar-toggler-icon"></span>\
-            </button>\
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">\
-                <ul class="navbar-nav ml-auto topnav">\
-                    <li class="nav-item active">\
-                        <a class="nav-link" href="index.html"><i class="fa-solid fa-house-chimney-window"></i> Home </a>\
-                    </li>\
-                    <li class="nav-item">\
-                        <a class="nav-link" href="aboutme.html"><i class="fa-regular fa-envelope"></i> Contact</a>\
-                    </li>\
-                </ul>\
-            </div>\
-        </div>'
-    )
+    '<nav class="navbar navbar-expand-sm navbar-dark fixed-top" style="background-color: var(--main-color);">\
+        <a class="navbar-brand" style="font-size:20px; line-height:24px; text-indent:20px;" href="javascript:void(0)"><i class="bi bi-camera-fill" style="color:white;font-size: 22px;"></i>&nbsp无处安放的猪</a>\
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">\
+            <span class="navbar-toggler-icon"></span>\
+        </button>\
+        <div class="collapse navbar-collapse" id="mynavbar">\
+        <ul class="navbar-nav me-auto"></ul>\
+            <a href="index.html" class="bar_btn" style="align:right"><i class="bi bi-house" style="color:white;"></i>&nbspHome</a>\
+            <a href="About Me" class="bar_btn"><i class="bi bi-file-person" style="color:white;"></i>&nbspAbout Me</a>\
+        </div>\
+    </nav>')
 }
+
+/*
+            /*<a href="http://34.94.134.31:8080/dosaic" class="bar_btn"><i class="bi bi-file-person" style="color:white;"></i>&nbspAbout</a>\
+*/
 function footMenu(){
     document.write(
         '<br>    <br>    <br>    <br>    <br>\

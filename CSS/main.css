@@ -1,7 +1,7 @@
 @import url(animate.css);
 
 :root {
-  --main-color: #d07000;
+  --main-color: #fd7e14;
 }
 
 body {
@@ -10,7 +10,7 @@ body {
 }
 p {
   margin: 0px 0px 0px 0px;  
-  text-indent: 2em;
+  text-indent: 0px;
   font-size: 14px;
 }
 
@@ -36,145 +36,11 @@ div.main-menu {
 
 }
 
-
 p.big {
   line-height: 25px;
   text-indent: 150px;
 }
 
-.topnav a:hover {
-  border-bottom: 3px solid #303030;
-}
-
-/*  */
-.navbar.bg-light {
-  background-color: #f3e2b3 !important;
-}
-.navbar.bg-light.form-control {
-  border-radius: 4.25rem;
-}
-
-
-.fa-brands {
-  padding: 4px;
-  font-size: 16px;
-  width: 24px;
-  text-align: center;
-  text-decoration: none;
-  margin: 1px 1px;
-  border-radius: 3px;
-}
-
-.fa:hover {
-    opacity: 0.8;
-    border-bottom: 3px solid red;
-}
-
-.fa-facebook {
-  background: #3B5998;
-  color: white;
-}
-
-.fa-twitter {
-  background: #55ACEE;
-  color: white;
-}
-
-.fa-google {
-  background: #dd4b39;
-  color: white;
-}
-
-.fa-linkedin {
-  background: #007bb5;
-  color: white;
-}
-
-.fa-youtube {
-  background: #bb0000;
-  color: white;
-}
-
-.fa-instagram {
-  background: #125688;
-  color: white;
-}
-
-.fa-pinterest {
-  background: #cb2027;
-  color: white;
-}
-
-.fa-snapchat-ghost {
-  background: #fffc00;
-  color: white;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-}
-
-.fa-skype {
-  background: #00aff0;
-  color: white;
-}
-
-.fa-android {
-  background: #a4c639;
-  color: white;
-}
-
-.fa-dribbble {
-  background: #ea4c89;
-  color: white;
-}
-
-.fa-vimeo {
-  background: #45bbff;
-  color: white;
-}
-
-.fa-tumblr {
-  background: #2c4762;
-  color: white;
-}
-
-.fa-vine {
-  background: #00b489;
-  color: white;
-}
-
-.fa-foursquare {
-  background: #45bbff;
-  color: white;
-}
-
-.fa-stumbleupon {
-  background: #eb4924;
-  color: white;
-}
-
-.fa-flickr {
-  background: #f40083;
-  color: white;
-}
-
-.fa-yahoo {
-  background: #430297;
-  color: white;
-}
-
-.fa-soundcloud {
-  background: #ff5500;
-  color: white;
-}
-
-.fa-reddit {
-  background: #ff5700;
-  color: white;
-}
-
-.fa-rss {
-  background: #ff6600;
-  color: white;
-}
 #container {
     position: fixed;
     width: 400px;
@@ -201,7 +67,24 @@ p.big {
     animation-timing-function: linear;
    }
 
-   
+.bar_btn{
+    text-decoration: none;
+    margin-right:10px;
+    border: 2px solid var(--main-color);
+    position: relative;
+    color:white;
+    overflow: hidden;
+
+    
+}
+.bar_btn:hover{
+  border-style: solid;
+    border-color: white; 
+    border-top: #007bb5;
+    border-right: #007bb5;
+    border-left: #007bb5;
+    color:white; 
+}   
 .btn {
   text-decoration: none;
   border: 2px solid var(--main-color);

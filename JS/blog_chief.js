@@ -1,7 +1,7 @@
 
 function blog_chief_large(title,summary)
 {
-    let str = '<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-xs-12" > <a href="blogs/'
+    let str = '<div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12" > <a href="blogs/'
         +title
         +'/main.html"><img class="dash" src="blogs/'
         +title

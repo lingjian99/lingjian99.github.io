@@ -41,9 +41,7 @@ h2{
   margin-bottom: 20px;
   text-align:left;
 }
-p{
-  line-height: 25px;
-}
+
   .blogCategory{
     text-indent: 0%;
 
@@ -74,5 +72,5 @@ p{
     float: left;
     line-height: 46px;
     padding-right: 8px;
-    margin-top: -6px;
+    margin-top: -2px;
 }

@@ -14,3 +14,4 @@ so i put 20 bucks there before l leave.
 大家都忙，我只好一人一车出发。
 Joshua Tree National Park
 Joshua Tree国家公园以一种叫joshua tree的树闻名。这是一种非常耐干旱的植物，整个公园夏季非常干旱，很难适合其他物种生存，这种并不常见的树成了优势种群，这附近非常常见。Joshua Tree国家公园离LA只有2、3个小时的车程，但公园里的人却非常少。
+

@@ -2,11 +2,10 @@
 
 .figure{
     font-size:small;
+
     margin-left: 6em;
     margin-right: 6em;
-    margin-bottom: 16px;
-    line-height: 22px;
-    text-indent: 0px;
+    line-height: 16px;
     color:var(--main-color);
 
 }
@@ -14,6 +13,7 @@
    width:100%;
    text-align:center;
    margin-top: 20px;
+   margin-bottom:0px;
 
    
 }
@@ -26,6 +26,7 @@
 
 img{
     max-width: 100%;
+    position:relative;
     box-shadow: 1px 1px 2px black;
 
   }
@@ -34,12 +35,14 @@ h1{
   margin-bottom:50px;
   text-align: center;
   text-shadow: 1px 1px 1px black;
+  color:#e0e0e0;
 }
 h2{
   margin-top:30px;
   font-size: 28px;
   margin-bottom: 20px;
   text-align:left;
+  color:#e0e0e0;
 }
 
   .blogCategory{
@@ -68,9 +71,13 @@ h2{
   .cont p:first-child::first-letter{
     color:var(--main-color);
 
-    font-size: 40px;
+    font-size: 2.5em;
     float: left;
     line-height: 46px;
-    padding-right: 8px;
+    padding-right: 5px;
     margin-top: -2px;
 }
+#list1 {
+  font:  2.5em Georgia, Times, serif;
+  color: var(--main-color);
+ }

@@ -1,3 +1,4 @@
+var myIndex = 0;
 
 function blog_chief_large(title,summary)
 {
@@ -19,4 +20,16 @@ function blog_chief_large1(name, title,summary)
         +'/images/cover.jpg" class="img-responsive" alt="No image"></a>'
         +'<div style="margin-top:6px;margin-bottom:10px;font-size:14px;">'+summary+'</div></div><div style="z-index:100;"><a href="blogs/'+name+'/main.html">'+title+'</a></div></div>';
     document.write(str);
+}
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2500);    
 }

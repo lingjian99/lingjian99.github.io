@@ -81,3 +81,35 @@ h2{
   font:  2.5em Georgia, Times, serif;
   color: var(--main-color);
  }
+
+ a.more {
+  text-decoration: none;
+  position: absolute;
+  top:50%;left:50%; 
+  margin-top:-80px;
+  margin-left:-100px;
+  font-size:x-large;
+  font-weight:normal;
+  color:var(--main-color);
+  animation: blink 4s linear infinite;
+  -webkit-animation: blink 4s linear infinite;
+  -moz-animation: blink 4s linear infinite;
+  -ms-animation: blink 4s linear infinite;
+  -o-animation: blink 4s linear infinite;
+}
+a.more:hover{
+  animation: none;
+}
+@keyframes blink {
+  0% {
+      color: var(--main-color);
+  }
+
+  50% {
+      color: transparent;
+  }
+
+  100% {
+      color: var(--main-color);
+  }
+}

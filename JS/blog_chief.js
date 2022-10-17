@@ -11,6 +11,14 @@ function blog_chief_large(title,summary)
     document.write(str);
 }
 
+function blog_photograph(title, summary)
+{
+    let str = '<div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12"><div style="position:relative;"> <img src="blogs/'
+        +title+'/images/cover.jpg" alt="No image">'
+        +'<a class="alink" href="blogs/'+title+'/main.html">'+summary+'</a></div></div>';
+    document.write(str);  
+}
+
 function blog_chief_large1(name, title,summary)
 {
     let str = '<div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12" ><div style=""> <a href="blogs/'

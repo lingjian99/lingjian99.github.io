@@ -2,36 +2,46 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        p {
-            font-size: 36px;
-            font-weight: bold;
-            color: red;
-            animation: blink 4s linear infinite;
-            -webkit-animation: blink 4s linear infinite;
-            -moz-animation: blink 4s linear infinite;
-            -ms-animation: blink 4s linear infinite;
-            -o-animation: blink 4s linear infinite;
-        }
-
-        @keyframes blink {
-            0% {
-                color: red;
-            }
-
-            50% {
-                color: transparent;
-            }
-
-            100% {
-                color: red;
-            }
-        }
-    </style>
 </head>
+<script src="blogs/js/meta_data.js"></script>
+
+<script>
+    window.onload=getExif;
+
+function getExif() {
+    var img1 = document.getElementById("img1");
+    EXIF.getData(img1, getMetaData);
+
+    var img2 = document.getElementById("img2");
+    EXIF.getData(img2, getMetaData1);
+
+    function getMetaData()
+    {
+        var make = EXIF.getTag(this, "Make");
+        var model = EXIF.getTag(this, "Model");
+        var makeAndModel = document.getElementById("makeAndModel");
+        makeAndModel.innerHTML = `${make} ${model}`;
+
+    }
+    function getMetaData1()
+    {
+
+        var allMetaData = EXIF.getAllTags(this);
+        var allMetaDataSpan = document.getElementById("allMetaDataSpan");
+        allMetaDataSpan.innerHTML = JSON.stringify(allMetaData, null, "\t");        
+    }
+}
+</script>
 <body>
-    <p>中国，加油！</p>
+    <img src="http://code.ciaoca.com/javascript/exif-js/demo/photo/DSCN0614_small.jpg" id="img1" />
+    <pre>Make and model: <span id="makeAndModel"></span></pre>
+    <br/>
+    <img src="" id="img2" />
+    <pre id="allMetaDataSpan">Exif:</pre>
+    <br/>
 </body>
 </html>
+

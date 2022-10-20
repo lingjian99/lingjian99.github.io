@@ -96,6 +96,8 @@ p.big {
   overflow: hidden;
   border-radius: 20px;
   width:300px;
+  text-align: left;
+  text-indent:2em
   
 }
 

@@ -8,7 +8,7 @@ function barMenu(path){
         <div class="collapse navbar-collapse" id="mynavbar">\
         <ul class="navbar-nav me-auto"></ul>\
             <a href=' + path + '/index.html class="bar_btn" style="align:right"><i class="bi bi-house" style="color:white;"></i>&nbspHome</a>\
-            <a href="About Me" class="bar_btn"><i class="bi bi-file-person" style="color:white;"></i>&nbspAbout Me</a>\
+            <a href=' + path + '/aboutme.html class="bar_btn"><i class="bi bi-file-person" style="color:white;"></i>&nbspAbout Me</a>\
         </div>\
     </nav>')
 }

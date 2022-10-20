@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+
+<style type="text/css">
+
+html {
+	height: 100%;
+}
+
+body {
+	margin: 0;
+	height: 100%;
+    color: white;
+	background-color: black;
+}
+
+#container {
+	height: 100%;
+}
+
+#sidebar {
+
+	display: inline-block;
+	vertical-align: top;
+	height: 100%;
+	width: 18%;
+	overflow: auto;
+    border-left-style:solid;
+    border-left-color: #505050;
+    border-left-width:1px;
+    padding-left: 1%;
+
+
+}
+
+#content {
+
+	display: inline-block;
+	vertical-align: top;
+	height: 100%;
+	width: 80%;
+	overflow: auto;
+}
+.diplay_image {
+    position: absolute;;
+    width:auto;
+    max-width: 100%;
+    left:50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+
+}
+.cont p:first-child::first-letter{
+    color:#fd7e14;
+
+    font-size: 2.0em;
+    float: left;
+    line-height: 32px;
+    padding-right: 5px;
+    margin-top: 4px;
+}
+.top_button{
+	line-height: 50px;
+
+	text-decoration: none;
+	color:white;
+	font-size: x-large;
+}
+.top_button :hover
+{
+	font-weight: bolder;
+	color:#fd7e14;
+	text-shadow: 2px 2px 4px #fd7e14;
+}
+.left{
+	position:absolute;
+	display: inline-block;
+	text-align:left;
+	padding-left: 20px;
+}
+.center{
+	position:absolute;
+	display:inline-block;
+	text-align: center;
+	left:50%;
+}
+
+.right{
+	position:absolute;
+	display:inline;
+	text-align: right;
+	right:0px;
+	padding-right: 20px;
+
+}
+.left_center{
+	position:absolute;
+	display:inline;
+	text-align: center;
+	left:0px;
+	top:50%;
+	padding-right: 20px;
+	background-color: transparent;
+	border: none;
+
+}
+.right_center{
+	position:absolute;
+	display:inline;
+	text-align: center;
+	right:0px;
+	top:50%;
+	background-color: transparent;
+	border: none;
+
+}
+</style>
+<script>
+	let images=['cooper_hawk-1.jpg','cooper_hawk-2.jpg']
+	let index=-1;
+	let description=[
+		'',
+		''
+	]
+	window.onload = (e) => {
+		next_image();
+	}
+	function next_image(){
+		index = index==images.length-1? 0:index+1;
+		document.getElementById('image').setAttribute('src', './images/'+images[index]);
+		No();
+
+	}
+	function prev_image(){
+		index=index<=0?images.length-1:index-1;
+		document.getElementById('image').setAttribute('src', './images/'+images[index]);
+		No();
+	}
+	function No(){
+		document.getElementById('no').innerHTML=(index + 1).toString() + '/' + images.length.toString();
+		document.getElementById('description').innerHTML=description[index];
+	}
+
+</script>
+<script src="../js/meta_data.js"></script>
+
+</head>
+
+<body>
+<div id="container">
+    <!--
+ --><div id="content" >
+		<!-- Main contents -->
+		<div style="position:relative; height:100%;">
+			<div>
+
+				<a class="left top_button" href="#" ><i class="bi bi-arrows-fullscreen"></i></a>
+				<a class="center top_button" href="#" id="no"></a>
+				<a href="main.html" class="right top_button"><i class="bi bi-x-lg"></i></a>
+				<a href="#" class="right top_button" style="right:50px;"><i class="bi bi-cloud-download"></i></a>
+			</div>
+        	<img class="diplay_image" id="image" src="">
+			<button class="right_center top_button" id="next_image" style="font-size:xx-large; right:10px;" onclick="next_image()"><i class="bi bi-chevron-right"></i></button>
+			<button class="left_center top_button" id="prev_image" style="font-size:xx-large;left:10px;" onclick="prev_image()"><i class="bi bi-chevron-left"></i></a>
+        </div>
+	</div>
+	<div id="sidebar">
+		<!-- Sidebar contents -->
+		<div id="sidebar-content">
+			<p style="font-weight:lighter;font-size:x-large"><a style="color:white;" href="https://www.birdnote.org/listen/shows/urban-coopers-hawks">Urban Cooper's Hawk</a></p>
+			<div>
+				<input type="checkbox">显示边框</button>
+			</div>
+			<hr size=1 color="orange">
+			<div class="cont"><p style="font-family: 'Courier New', Courier, monospace;">Cooper's Hawk在美西分布很广，但我家周围很少见到。飞得比红尾鹰快许多，不容易拍好。</p></div>
+			<p id="description"></p>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>

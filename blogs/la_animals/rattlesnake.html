@@ -2,121 +2,8 @@
 <html>
 <head>
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+	<link rel="stylesheet" href="../../CSS/slide.css">
 
-<style type="text/css">
-
-html {
-	height: 100%;
-}
-
-body {
-	margin: 0;
-	height: 100%;
-    color: white;
-	background-color: black;
-}
-
-#container {
-	height: 100%;
-}
-
-#sidebar {
-
-	display: inline-block;
-	vertical-align: top;
-	height: 100%;
-	width: 18%;
-	overflow: auto;
-    border-left-style:solid;
-    border-left-color: #505050;
-    border-left-width:1px;
-    padding-left: 1%;
-
-
-}
-
-#content {
-
-	display: inline-block;
-	vertical-align: top;
-	height: 100%;
-	width: 80%;
-	overflow: auto;
-}
-.diplay_image {
-    position: absolute;;
-    width:auto;
-    max-width: 100%;
-    left:50%;
-    top:50%;
-    transform: translate(-50%, -50%);
-
-}
-.cont p:first-child::first-letter{
-    color:#fd7e14;
-
-    font-size: 2.0em;
-    float: left;
-    line-height: 32px;
-    padding-right: 5px;
-    margin-top: 4px;
-}
-.top_button{
-	line-height: 50px;
-
-	text-decoration: none;
-	color:white;
-	font-size: x-large;
-}
-.top_button :hover
-{
-	font-weight: bolder;
-	color:#fd7e14;
-	text-shadow: 2px 2px 4px #fd7e14;
-}
-.left{
-	position:absolute;
-	display: inline-block;
-	text-align:left;
-	padding-left: 20px;
-}
-.center{
-	position:absolute;
-	display:inline-block;
-	text-align: center;
-	left:50%;
-}
-
-.right{
-	position:absolute;
-	display:inline;
-	text-align: right;
-	right:0px;
-	padding-right: 20px;
-
-}
-.left_center{
-	position:absolute;
-	display:inline;
-	text-align: center;
-	left:0px;
-	top:50%;
-	padding-right: 20px;
-	background-color: transparent;
-	border: none;
-
-}
-.right_center{
-	position:absolute;
-	display:inline;
-	text-align: center;
-	right:0px;
-	top:50%;
-	background-color: transparent;
-	border: none;
-
-}
-</style>
 <script>
 	let images=['rattlesnake-1.jpg']
 	let index=-1;
@@ -140,9 +27,9 @@ body {
 </head>
 
 <body>
-<div id="container">
+<div id="container_slide">
     <!--
- --><div id="content" >
+ --><div id="content_slide" >
 		<!-- Main contents -->
 		<div style="position:relative; height:100%;">
 			<div>
@@ -164,7 +51,7 @@ body {
 			<div>
 				<input type="checkbox">显示边框</button>
 			</div>
-			<hr size=1 color="orange">
+			<hr size=2 style="border-color: var(--main-color);">
 			<div class="cont"><p style="font-family: 'Courier New', Courier, monospace;">响尾蛇只有美洲有，尤其是干旱的加州，因为据说响尾蛇发出的嚓嚓嚓的声音会让其他小动物以为是水声，从而循声而来解渴。另外，加州有好几只蛇，但响尾蛇是加州唯一的毒蛇，所以认识响尾蛇很重要，在加州只要不是响尾蛇，那就不是毒蛇。</p></div>
 			<p id="description"></p>
 		</div>

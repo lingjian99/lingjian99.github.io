@@ -1,7 +1,13 @@
 @import url(animate.css);
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
 :root {
-  --main-color: #fd7e14;
+  --background-color: var(--main-color);
+  --main-color:#d07010;
+  /*
+  #a07000
+  
+  */
+  
 }
 
 body {
@@ -103,7 +109,7 @@ p.big {
 
 .btn:hover {
   color:var(--main-color);
-  box-shadow: 1px 1px 25px 10px rgba(346, 148, 0, 0.4);
+  box-shadow: 1px 1px 25px 10px var(--main-color);
 }
 
 .btn:hover:before {
